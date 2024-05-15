@@ -12,6 +12,7 @@ function TodoForm({ addTodo }) { // defines function TodoForm & recieves a singl
 
   return ( // a jsx that creates a form after submission
     <form onSubmit={handleSubmit}>
+        {/* creates a form element and runs when submitted*/}
       <input
         type="text"
         value={value}
