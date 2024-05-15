@@ -14,7 +14,7 @@ function App() { //defines the app functional component
   const toggleTodo = (index) => { //defines function toggleTodo & parameter index
     const newTodos = [...todos]; //creates a new array newTodos a copy of the current todos array 
     newTodos[index].completed = !newTodos[index].completed; //if completed is true make false and vice versa
-    setTodos(newTodos); c//updates the new todos array
+    setTodos(newTodos); //updates the new todos array
   };
 
   const deleteTodo = (index) => { //defines function deleteTodo & parameter index
