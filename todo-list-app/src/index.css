@@ -1,13 +1,63 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #CBC3E3; /* Light  background color */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* App container */
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Title */
+h1 {
+  color: #6a0dad; /*  color for the title */
+}
+
+/* Form */
+form {
+  margin-bottom: 20px;
+}
+
+/* Input field */
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #6a0dad; /* border for input field */
+  border-radius: 5px;
+}
+
+/* Button */
+button {
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #6a0dad; /*  background color for button */
+  color: white; /* Text color for button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* List item */
+li {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #6a0dad; /* text color for list items */
+}
+
