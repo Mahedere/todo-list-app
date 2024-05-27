@@ -1,6 +1,8 @@
 # here the pydantic models
 import datetime
 from pydantic import BaseModel
+from back_end.models import task_status
+from typing import List
 
 # User
 class UserBase(BaseModel):
@@ -17,13 +19,14 @@ class User(UserBase):
 
     class Config:
         orm_mode = True
+        arbitrary_types_allowed = True
 
 # Task
 class TaskBase(BaseModel):
-    book_id: int
+    user_id: int
     name: str
     description: str
-    status: str
+    status: task_status
 
 class TaskCreate(TaskBase):
     pass
@@ -35,3 +38,4 @@ class Task(TaskBase):
 
     class Config:
         orm_mode = True
+        arbitrary_types_allowed = True
